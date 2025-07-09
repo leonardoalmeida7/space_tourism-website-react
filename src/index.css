@@ -13,6 +13,18 @@
 
 }
 
+* {
+  color: #fff;
+  font-family: var(--FontPrimary);
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 li {
-    cursor: pointer;
+  cursor: pointer;
+  
 }

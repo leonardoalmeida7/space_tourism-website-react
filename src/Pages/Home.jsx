@@ -1,10 +1,9 @@
-import Header from "../Components/Header/Header"
+import './Home.css';
 
 
 const Home = () => {
   return (
     <>
-        <Header />
         <main>
             <span>So, you want to travel to</span>
             <h1>Space</h1>

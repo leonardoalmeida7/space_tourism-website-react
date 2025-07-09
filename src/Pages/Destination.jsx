@@ -1,15 +1,10 @@
-import React from 'react'
-import Header from '../Components/Header/Header'
-import NavDestination from '../Components/Header/NavDestination'
+
+import NavDestination from '../Components/Main/NavDestination'
+import  './Destination.css'
 
 const Destination = () => {
   return (
     <div>
-        <Header />
-        <p className='page-actual'>
-            <span className='num'>01</span>
-            PICK YOUR DESTINATION
-        </p>
         <NavDestination />
     </div>
   )

@@ -1,0 +1,74 @@
+/* Reset básico */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 90%;
+  z-index: 1001;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 4px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+
+/* Animação do botão */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Menu lateral */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+  border-left: 1px solid #ffffff1a;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+.side-menu.active {
+  right: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  margin: 15px 25px;
+  text-align: start;
+}
+.side-menu span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.side-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}

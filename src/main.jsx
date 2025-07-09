@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Pages/Home.jsx';
 import Destination from './Pages/Destination.jsx';
+import Crew from './Pages/Crew.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,7 +14,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: '/', element: <Home/> },
-      { path: '/destination', element: <Destination /> }
+      { path: '/destination', element: <Destination /> },
+      { path: '/crew', element: <Crew /> }
     ]
   }
 ])

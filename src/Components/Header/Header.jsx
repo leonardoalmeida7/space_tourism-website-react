@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom"
 import styles from "./Header.module.css"
+import SidebarMenu from "./SidebarMenu"
+
+
 
 const Header = () => {
   return (
-      <header>
+    <header>
+        <SidebarMenu />
         <div className="logo">
-          <img src="./images/shared/logo.svg" alt="Logo" />
+          <img className={styles.img } src="./images/shared/logo.svg" alt="Logo" />
         </div>
         <nav>
-          <ul>
-            <li><Link to="/">HOME</Link></li>
-            <li><Link to="/destination" >01 Destination</Link></li>
-            <li>02 Crew</li>
-            <li>03 Technology</li>
+          <ul className="">
+            <li><Link to="/" className={styles.format}>00 HOME</Link></li>
+            <li><Link to="/destination" className={styles.format}>01 DESTINATION</Link></li>
+            <li><Link to="/crew" className={styles.format}>02 CREW</Link></li>
+            <li className={styles.format}>03 TECHNOLOGY</li>
           </ul>
         </nav>
       </header>
