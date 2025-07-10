@@ -1,5 +1,42 @@
-body {
-  background-image: url('images/destination/background-destination-mobile.jpg');
-  background-repeat: no-repeat;
+body.home-background {
+  background: url('images/home/background-home-mobile.jpg') no-repeat center center fixed;
   background-size: cover;
+}
+
+body.destination-background {
+  background: url('images/destination/background-destination-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.crew-background {
+  background: url('images/crew/background-crew-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.default-background {
+  background-color: white;
+}
+
+
+@media screen and (min-width: 768px){
+
+  body.home-background {
+    background: url('images/home/background-home-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.destination-background {
+    background: url('images/destination/background-destination-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.contato-background {
+    background: url('images/crew/background-crew-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.default-background {
+    background-color: white;
+  }
+  
 }

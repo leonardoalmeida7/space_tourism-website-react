@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SidebarMenu.css"; // Estilo separado
+import { Link } from "react-router-dom"
 
 const SidebarMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,11 +24,11 @@ const SidebarMenu = () => {
 
       {/* Menu lateral */}
       <nav className={`side-menu ${menuOpen ? "active" : ""}`}>
-        <ul className="d-flex flex-column">
-          <li><a href="#inicio" onClick={closeMenu}><span>00</span> HOME</a></li>
-          <li><a href="#sobre" onClick={closeMenu}><span>01</span> DESTINATION</a></li>
-          <li><a href="#servicos" onClick={closeMenu}><span>02</span> CREW</a></li>
-          <li><a href="#contato" onClick={closeMenu}><span>03</span> TECHNOLOGY</a></li>
+        <ul className="d-flex flex-column flex-md-row">
+          <li><Link to="/" onClick={closeMenu}><span>00</span>HOME</Link></li>
+          <li><Link to="/destination"  onClick={closeMenu}><span>01</span> DESTINATION</Link></li>
+          <li><Link to="/crew"  onClick={closeMenu}><span>02</span> CREW</Link></li>
+          <li ><Link to="/technology" onClick={closeMenu}></Link><span>03</span> TECHNOLOGY</li>
         </ul>
       </nav>
     </>
