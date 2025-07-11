@@ -17,6 +17,9 @@ const router = createBrowserRouter([
       { path: '/destination', element: <Destination /> },
       { path: '/crew', element: <Crew /> }
     ]
+  },
+  {
+    basename: '/space_tourism-website-react',
   }
 ])
 
