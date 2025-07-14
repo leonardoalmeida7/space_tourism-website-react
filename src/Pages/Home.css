@@ -1,0 +1,26 @@
+main {
+    font-size: 1.1em;
+    height: 90dvh;
+    margin-top: 16px;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+.btn-explore {
+    background-color: #fff;
+    color: black;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+
+}
+
+.link {
+    text-decoration: none;
+    color: var(--Blue900);
+}

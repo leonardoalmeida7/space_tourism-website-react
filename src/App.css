@@ -40,3 +40,26 @@ body.default-background {
   }
   
 }
+
+@media screen and (min-width: 1200px){
+
+  body.home-background {
+    background: url('/space_tourism-website-react/images/home/background-home-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.destination-background {
+    background: url('/space_tourism-website-react/images/destination/background-destination-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.contato-background {
+    background: url('/space_tourism-website-react/images/crew/background-crew-desktop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  body.default-background {
+    background-color: white;
+  }
+  
+}

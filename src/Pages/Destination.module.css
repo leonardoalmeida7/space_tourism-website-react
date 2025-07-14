@@ -1,0 +1,50 @@
+.img {
+    width: 200px;
+    margin-bottom: 48px;
+}
+
+.num {
+    color: gray;
+    font-weight: bolder;
+    margin-right: 30px;
+    letter-spacing: 2px;
+}
+
+.main {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.link {
+    text-transform: uppercase;
+    color: var(--Blue300);
+    font-size: .9rem;
+}
+
+.active {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9rem;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 14px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 4.5rem;
+}
+
+.description {
+    padding: 0 24px;
+}
+
+p, span {
+    font-size: 1.1rem;
+    color: var(--Blue300);
+}
+
+.info {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
