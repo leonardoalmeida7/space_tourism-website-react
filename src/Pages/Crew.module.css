@@ -1,6 +1,6 @@
 .main {
     text-align: center;
-    min-height: 90vh;
+    max-height: 90vh;
     padding: 0 24px;
     margin-top: 34px;
 }
@@ -30,28 +30,27 @@
 }
 
 .imgContainer {
+    z-index: 0;
+    width: 100%;
+    max-width: 500px;
     position: relative;
-    width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
-}
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px; /* <-- altura fixa */
+    display: flex;
+    align-items: end;
+    justify-content: center;
 
-
-.imgContainer::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 40%;
-    background: linear-gradient(to top, #000000ec, transparent);
-    z-index: 1;
+    overflow: hidden; /* importante para esconder o excesso da imagem */
 }
 
 .img {
-    width: 100%;
-    display: block;
+    height: 85%;        /* <-- forçamos a imagem a preencher toda a altura do container */
+    width: auto;         /* <-- mantemos proporção */
+    object-fit: cover;   /* cobre o container sem deformar */
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 65%, transparent 97%);
 }
+
 
 .num {
     color: gray;

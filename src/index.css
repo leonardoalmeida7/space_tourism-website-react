@@ -16,6 +16,11 @@
 * {
   color: #fff;
   font-family: var(--FontPrimary);
+
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ul {

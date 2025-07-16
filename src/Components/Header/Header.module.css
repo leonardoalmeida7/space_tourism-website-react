@@ -1,3 +1,6 @@
+.header {
+    position: absolute;
+}
 .format {
     text-decoration: none;
     color: #fff;

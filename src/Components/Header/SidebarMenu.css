@@ -1,8 +1,8 @@
 /* Reset básico */
 .hamburger {
-  position: fixed;
+  position: absolute;
   top: 20px;
-  left: 90%;
+  left: calc(100% - 40px);
   z-index: 1001;
   width: 40px;
   height: 25px;
