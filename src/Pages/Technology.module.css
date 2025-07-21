@@ -1,0 +1,81 @@
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+.textColor {
+  color: #fff;
+}
+
+.num {
+    color: var(--Blue300);
+    margin-right: 20px;
+}
+
+.link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--Blue300);
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #fff;
+    color: var(--Blue900);
+}
+
+.active {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: var(--Blue900);
+}
+
+.techContainer {
+    margin-bottom: 40px;
+
+}
+
+.techImgContainer {
+    width: 100%;
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.techImgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+
+
+.textContainer h1 {
+   font-size: 1.2rem;
+   color: var(--Blue300);
+}
+
+.textContainer h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.textContainer p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: var(--Blue300);
+    line-height: 1.5;
+}

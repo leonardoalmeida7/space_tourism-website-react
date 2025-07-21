@@ -31,7 +31,7 @@ const Destination = () => {
           </ul>
           <h1 className={styles.title}>{currentDestination.name}</h1>
           <p className={styles.description}>{currentDestination.description}
-            <hr />
+           
           </p>
           <div className="distance mb-2">
               <span>AVG. DISTANCE</span>

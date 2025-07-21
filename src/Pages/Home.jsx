@@ -15,7 +15,7 @@ const Home = () => {
                     because we’ll give you a truly out of this world experience!
                 </p>
             </div>
-                <Link className='link' to='/destination'> 
+                <Link className='link' to='/destinations'> 
                     <div className='btn-explore mx-auto'>Explore</div> 
                 </Link>
         </main>

@@ -10,7 +10,6 @@ const Crew = () => {
     if (loading) return <p>Carregando...</p>;
     if (error) return <p>Erro ao carregar os dados.</p>;
     const { destinations, crew, technology } = data;
-    console.log(crew);
   return (
     <div className={styles.main}>
         <p className={styles.pageActual}>

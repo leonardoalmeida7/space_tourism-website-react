@@ -22,6 +22,10 @@
   transition: 0.3s ease;
 }
 
+.num {
+  color: #fff;
+}
+
 /* Animação do botão */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
@@ -73,6 +77,22 @@
   font-size: 18px;
 }
 
+li {
+  position: relative;
+}
+
+.activeLink::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 1.6rem;
+  background: #fff;
+  margin-top: 5px;
+  position: absolute;
+  left: calc(100% + 25px - 4px);
+  top: 50%;
+  transform: translateY(-70%);
+}
 
 @media screen and (min-width: 768px) {
   .hamburger {
@@ -80,17 +100,29 @@
   }
 
   .side-menu {
-    position: static;
+    position: absolute;
     height: auto;
     backdrop-filter: none;
     border: none;
     transition: none;
-    width: 100%;
-    padding-top: 0px;
-    margin-top: 30px;
+    width: 90%;
+    right: 0;
+    background-color: var(--Blue900);
+    padding: 20px 20px 0;
   }
 
   .side-menu a {
     font-size: 1rem;
+  }
+
+  .activeLink::after {
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: calc(100% + 24px);
+  }
+  
+  .num-home {
+    display: none;
   }
 }

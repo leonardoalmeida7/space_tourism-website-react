@@ -13,8 +13,9 @@ body.crew-background {
   background-size: cover;
 }
 
-body.default-background {
-  background-color: white;
+body.technology-background {
+  background: url('/space_tourism-website-react/images/technology/background-technology-mobile.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
 
 
@@ -35,8 +36,9 @@ body.default-background {
     background-size: cover;
   }
 
-  body.default-background {
-    background-color: white;
+  body.technology-background {
+    background: url('/space_tourism-website-react/images/technology/background-technology-tablet.jpg') no-repeat center center fixed;
+    background-size: cover;
   }
   
 }

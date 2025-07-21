@@ -4,21 +4,13 @@ import SidebarMenu from "./SidebarMenu"
 
 
 
-const Header = () => {
+const Header = ({ actualLink, setActualLink }) => {
   return (
-    <header className="d-flex align-items-center">
-        <div className={styles.logo}>
+    <header className="d-flex align-items-center align-items-md-start">
+        <div className={styles.logo + ' mt-md-3'}>
           <img className={styles.img } src="./images/shared/logo.svg" alt="Logo" />
         </div>
-        {/* <nav>
-          <ul>
-            <li><Link to="/" className={styles.format}>00 HOME</Link></li>
-            <li><Link to="/destination" className={styles.format}>01 DESTINATION</Link></li>
-            <li><Link to="/crew" className={styles.format}>02 CREW</Link></li>
-            <li className={styles.format}>03 TECHNOLOGY</li>
-          </ul>
-        </nav> */}
-        <SidebarMenu />
+        <SidebarMenu actualLink={actualLink} setActualLink={setActualLink} />
       </header>
   )
 }
