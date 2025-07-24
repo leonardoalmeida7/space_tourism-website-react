@@ -126,3 +126,32 @@ li {
     display: none;
   }
 }
+
+@media screen and (min-width: 1200px){
+    .side-menu {
+      min-width: 500px;
+      width: 60%;
+      max-width: 920px;
+      background: none;
+      backdrop-filter: blur(26px);
+    }
+
+    .side-menu::before {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 3px;
+      background-color: #30303080;
+      top: 50%;
+      left: -22%;
+      translate: -50% 22%;
+    }
+}
+
+@media screen and (min-width: 1750px) {
+    .side-menu::before {
+      width: 90%;
+      left: -37%;
+      translate: -50% 36%;
+    }
+}

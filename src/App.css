@@ -45,6 +45,10 @@ body.technology-background {
 
 @media screen and (min-width: 1200px){
 
+  body {
+    overflow-y: hidden;
+  }
+
   body.home-background {
     background: url('/space_tourism-website-react/images/home/background-home-desktop.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -60,8 +64,9 @@ body.technology-background {
     background-size: cover;
   }
 
-  body.default-background {
-    background-color: white;
+  body.technology-background {
+    background: url('/space_tourism-website-react/images/technology/background-technology-desktop.jpg') no-repeat top left fixed;
+    background-size: cover;
   }
   
 }

@@ -57,7 +57,6 @@
     margin-top: 40px;
 }
 
-
 .textContainer h1 {
    font-size: 1.2rem;
    color: var(--Blue300);
@@ -78,7 +77,9 @@
 
 
 @media screen and (min-width: 768px){
-
+    .main {
+        margin-top: 28px;
+    }
 
     .pageActual {
         text-align: left;
@@ -86,6 +87,27 @@
     }
 
     .techImgContainer {
-        height: 400px;
+        height: auto;
     }
+
+    .textContainer {
+        max-width: 540px;
+    }
+
+    .link,
+    .active {
+        width: 50px;
+        height: 50px;
+        font-size: 1.4rem;
+    }
+
+    .textContainer h1 {
+        font-size: 1.4rem;
+    }
+
+    .textContainer h2 {
+        font-size: 2.6rem;
+    }
+
+
 }

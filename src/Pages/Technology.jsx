@@ -36,7 +36,7 @@ const Technology = () => {
         </div>
         <div className={styles.textContainer}>
             <h1>THE TERMINOLOGY...</h1>
-            <h2>{currentTech?.name}</h2>
+            <h2 className={styles.name}>{currentTech?.name}</h2>
             <p>{currentTech?.description}</p>
         </div>
     </div>
