@@ -105,10 +105,10 @@ li {
     backdrop-filter: none;
     border: none;
     transition: none;
-    width: 90%;
+    width: 84%;
     right: 0;
-    background-color: var(--Blue900);
-    padding: 20px 20px 0;
+    background-color: #303030;
+    padding: 20px 70px 0;
   }
 
   .side-menu a {

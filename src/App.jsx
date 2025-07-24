@@ -39,7 +39,7 @@ function App() {
   return (
     <div>
       <Header actualLink={actualLink} setActualLink={setActualLink} />
-      <div className='container-md p-0'>
+      <div className='container-xl p-0'>
         <Outlet />
       </div>
     </div>

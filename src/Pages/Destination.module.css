@@ -40,7 +40,6 @@
 
 p, span {
     font-size: 1.1rem;
-    color: var(--Blue300);
 }
 
 .info {
@@ -48,3 +47,40 @@ p, span {
     text-transform: uppercase;
     color: #fff;
 }
+
+
+@media screen and (min-width: 768px) {
+    .main {
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .page-actual {
+        text-align: left;
+    }
+
+    .img {
+        width: 260px;
+    }
+
+    .link,
+    .active {
+        margin: 0 16px;
+    }
+
+    .title {
+        font-size: 5.5rem;
+    }
+
+    
+    .description {
+        font-size: 1.2rem;
+    }
+
+    .containText {
+        width: 67%;
+        margin: 0 auto;
+    }
+
+}
+    

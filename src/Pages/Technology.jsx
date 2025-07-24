@@ -17,7 +17,7 @@ const Technology = () => {
 
   return (
     <div className={styles.main}>
-        <p className={styles.textColor}>
+        <p className={styles.pageActual}>
             <span className={styles.num}>03</span>
             SPACE LAUNCH 101
         </p>

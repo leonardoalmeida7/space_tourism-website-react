@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
-        <main className='text-center d-flex flex-column justify-content-around '>
-            <div className='p-4'>
+        <main className='text-center d-flex flex-column justify-content-around justify-content-md-center '>
+            <div className='container-text p-4 mb-md-5'>
                 <span>SO, YOU WANT TO TRAVEL TO</span>
                 <h1>SPACE</h1>
                 <p>
@@ -16,7 +16,9 @@ const Home = () => {
                 </p>
             </div>
                 <Link className='link' to='/destinations'> 
-                    <div className='btn-explore mx-auto'>Explore</div> 
+                    <div className='btn-explore mx-auto'>
+                        Explore
+                    </div> 
                 </Link>
         </main>
     </>

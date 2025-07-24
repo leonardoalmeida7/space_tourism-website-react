@@ -14,7 +14,7 @@ const Destination = () => {
 
     return (
       <div className={styles.main}>
-          <p className='page-actual mb-5'>
+          <p className='page-actual mb-5 text-md-start'>
               <span className={styles.num}>01</span>
               PICK YOUR DESTINATION
           </p>
@@ -22,26 +22,29 @@ const Destination = () => {
           src={currentDestination.images?.png || ''} 
           alt={currentDestination.name || 'Imagem'} 
           />
-          <ul className="d-flex justify-content-around px-5">
+          <ul className="d-flex justify-content-around px-5 justify-content-md-center">
           {destinations.map((dest, index) => (
               <li onClick={() => setLinkIndex(index)} key={index} className={linkIndex == index ? styles.active : styles.link}>
               {dest.name}
               </li>
           ))}
           </ul>
-          <h1 className={styles.title}>{currentDestination.name}</h1>
-          <p className={styles.description}>{currentDestination.description}
-           
-          </p>
-          <div className="distance mb-2">
-              <span>AVG. DISTANCE</span>
-              <br />
-              <span className={styles.info}>{currentDestination.distance}</span>
-          </div>
-          <div className="travel-time">
-              <span>EST. TRAVEL TIME</span>
-              <br />
-              <span className={styles.info}>{currentDestination.travel}</span>
+          <div className={styles.containText}>
+            <h1 className={styles.title}>{currentDestination.name}</h1>
+            <p className={styles.description}>{currentDestination.description}</p>
+            <hr className="d-none d-md-block"/>
+            <div className="d-md-flex justify-content-around">
+                <div className="distance mb-2">
+                    <span>AVG. DISTANCE</span>
+                    <br />
+                    <span className={styles.info}>{currentDestination.distance}</span>
+                </div>
+                <div className="travel-time">
+                    <span>EST. TRAVEL TIME</span>
+                    <br />
+                    <span className={styles.info}>{currentDestination.travel}</span>
+                </div>
+            </div>
           </div>
       </div>
     );
