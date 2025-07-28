@@ -17,7 +17,7 @@ const Crew = () => {
             MEET YOUR CREW
         </p>
         {crew[linkIndex] && (
-          <div>
+          <div className={styles.containerInfo + ' d-xl-flex align-items-center justify-content-center'}>
             <div className={styles.info}>
               <span className={styles.role}>
                 {crew[linkIndex].role}
@@ -29,23 +29,19 @@ const Crew = () => {
                 {crew[linkIndex].bio}
               </p>
               <div className={styles.circles}>
-              </div>
-            </div>
-            <div>
-              <div className={styles.circles}>
                 {crew.map((member, index) => (
-                  <div  key={index}>
+                  <div key={index}>
                     <div onClick={() => setLinkIndex(index)} className={linkIndex === index ? styles.activeCircle : styles.circle}></div>
                   </div>
                 ))}
               </div>
-              <div className={styles.imgContainer}>'
-              <img className={styles.img} 
-                src={crew[linkIndex].images?.png || ''} 
-                alt={crew[linkIndex].name || 'Imagem'}
-              /> 
-              </div>
             </div>
+              <div className={styles.imgContainer}>'
+                <img className={styles.img} 
+                    src={crew[linkIndex].images?.png || ''} 
+                    alt={crew[linkIndex].name || 'Imagem'}
+                  /> 
+              </div>
           </div>
         )}
     </div>

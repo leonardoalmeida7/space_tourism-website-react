@@ -111,3 +111,22 @@
 
 
 }
+
+@media screen and (min-width: 1200px){
+    .main {
+        height: 80dvh;
+    }
+
+    .containData {
+        height: 100%;
+    }
+
+    .techContainer {
+        position: absolute;
+        right: 0;
+    }
+
+    .textContainer {
+        margin: 0 42px;
+    }
+}

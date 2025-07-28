@@ -120,3 +120,75 @@
         mask-image: none;
     }
 }
+
+
+@media screen and (min-width: 1200px){
+    .main {
+        height: 62dvh;
+    }
+
+    .containerInfo {
+        min-height: 400px;
+        height: 100%;
+
+    }
+
+    .pageActual {
+        margin-left: 7%;
+        font-size: 1.3rem;
+    }
+
+    .num {
+        font-size: 1.3rem;
+    }
+
+    .info {
+        text-align: start;
+        width: 60%;
+        max-width: 600px;
+        margin: 0;
+        margin-right: 94px;
+    }
+
+    .role {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 3.5rem;
+    }
+
+    .bio {
+        font-size: 1.3rem;
+    }
+
+    .circles {
+        margin-top: 20%;
+        margin-right: calc(100% - 148px);
+    }
+
+    .circle,
+    .activeCircle {
+        width: 13px;
+        height: 13px;
+        margin: 0 12px;
+    }
+
+    .imgContainer {
+        width: 70%;
+        max-width: 640px;
+        height: 550px;
+        left: 0;
+        transform: none;
+        margin-left: 94px;
+    }
+
+    .img {
+        mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 75%, transparent 97%);
+    }
+
+    .bio {
+        padding: 0;
+    }
+
+}

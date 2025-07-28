@@ -54,9 +54,8 @@ h1 {
 
 @media screen and (min-width: 1200px) {
     main {
-        margin-top: 120px;
-        padding-top: 200px;
-        height: 700px;
+        padding: 20% 5%;
+        height: 100%;
         width: 100%;
     }
 

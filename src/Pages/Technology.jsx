@@ -21,23 +21,28 @@ const Technology = () => {
             <span className={styles.num}>03</span>
             SPACE LAUNCH 101
         </p>
-        <div className={styles.techContainer}>
-            <picture className={styles.techImgContainer}>
-                <source media="(min-width: 540px)" srcSet={currentTech?.images.landscape} />
-                <img src={currentTech?.images.portrait} alt={currentTech?.name} />
-            </picture>
-        </div>
-        <div className='d-flex justify-content-center'>
-            {technology && technology.map((tech, index) => (
-                <div onClick={() => setLinkIndex(index)} key={index} className={`d-flex justify-content-center align-items-center mx-2 ${linkIndex == index ? styles.active : styles.link}`}>
-                    {index + 1}
+        <div className={styles.containData}>
+            <div className={styles.techContainer}>
+                <picture className={styles.techImgContainer}>
+                    <source media="(min-width: 940px)" srcSet={currentTech?.images.portrait} />
+                    <source media="(min-width: 540px)" srcSet={currentTech?.images.landscape} />
+                    <img src={currentTech?.images.portrait} alt={currentTech?.name} />
+                </picture>
+            </div>
+            <div className='d-xl-flex align-items-center '>
+                <div className='d-flex justify-content-center flex-xl-column'>
+                    {technology && technology.map((tech, index) => (
+                        <div onClick={() => setLinkIndex(index)} key={index} className={`d-flex justify-content-center align-items-center mx-2 ${linkIndex == index ? styles.active : styles.link}`}>
+                            {index + 1}
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
-        <div className={styles.textContainer}>
-            <h1>THE TERMINOLOGY...</h1>
-            <h2 className={styles.name}>{currentTech?.name}</h2>
-            <p>{currentTech?.description}</p>
+                <div className={styles.textContainer + ' text-xl-start'}>
+                    <h1>THE TERMINOLOGY...</h1>
+                    <h2 className={styles.name}>{currentTech?.name}</h2>
+                    <p>{currentTech?.description}</p>
+                </div>
+            </div>
         </div>
     </div>
   )
