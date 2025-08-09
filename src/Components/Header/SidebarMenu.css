@@ -135,7 +135,7 @@ li {
       min-width: 500px;
       width: 60%;
       max-width: 920px;
-      background: none;
+      background: #00000080;
       backdrop-filter: blur(26px);
       -webkit-backdrop-filter: blur(26px);
       -moz-backdrop-filter: blur(26px);

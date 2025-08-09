@@ -32,7 +32,7 @@ const Technology = () => {
             <div className='d-xl-flex align-items-center '>
                 <div className='d-flex justify-content-center flex-xl-column'>
                     {technology && technology.map((tech, index) => (
-                        <div onClick={() => setLinkIndex(index)} key={index} className={`d-flex justify-content-center align-items-center mx-2 ${linkIndex == index ? styles.active : styles.link}`}>
+                        <div onClick={() => setLinkIndex(index)} key={index} className={`d-flex justify-content-center align-items-center mx-2 my-xl-3 ${linkIndex == index ? styles.active : styles.link}`}>
                             {index + 1}
                         </div>
                     ))}

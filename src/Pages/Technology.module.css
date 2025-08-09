@@ -1,6 +1,8 @@
 .main {
     width: 100%;
     text-align: center;
+    max-width: 1400px;
+    margin: auto;
 }
 
 
@@ -119,6 +121,9 @@
 
     .containData {
         height: 100%;
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
     }
 
     .techContainer {
@@ -126,7 +131,23 @@
         right: 0;
     }
 
+    .techImgContainer img {
+        width: 600px;
+    }
+
     .textContainer {
         margin: 0 42px;
+    }
+
+    .textContainer h1 {
+        font-size: 2rem;
+    }
+
+    .textContainer .name {
+        font-size: 4rem;
+    }
+
+    .textContainer p {
+        font-size: 1.35rem;
     }
 }
